@@ -1,0 +1,14 @@
+include ../_variables
+block top
+doctype html
+html
+	include ../parts/head
+	body
+		include ../parts/styles
+		.main-wrap
+			include ../parts/header
+			main.main
+				block content
+			include ../parts/footer
+		include ../parts/scripts
+block bottom

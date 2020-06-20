@@ -1,0 +1,29 @@
+head
+	block topHead
+	meta(charset=charset)
+	title= title
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+
+	//- Favicon
+	link(rel="icon" src= DIR_UPLOAD + "favicon/favicon.png")
+	//-
+		link(rel="icon" sizes="16x16" type="image/svg" href= DIR_UPLOAD + "favicon-16x16.svg")
+		link(rel="apple-touch-icon" sizes="72x72" href= DIR_UPLOAD + "favicon-72x72.png")
+		link(rel="apple-touch-icon" sizes="76x76" href= DIR_UPLOAD + "favicon-76x76.png")
+		link(rel="apple-touch-icon" sizes="114x114" href= DIR_UPLOAD + "favicon-114x114.png")
+		link(rel="apple-touch-icon" sizes="120x120" href= DIR_UPLOAD + "favicon-120x120.png")
+		link(rel="apple-touch-icon" sizes="144x144" href= DIR_UPLOAD + "favicon-144x144.png")
+		link(rel="apple-touch-icon" sizes="152x152" href= DIR_UPLOAD + "favicon-152x152.png")
+		link(rel="apple-touch-icon" sizes="180x180" href= DIR_UPLOAD + "favicon-180x180.png")
+
+	//- SEO
+	if keywords
+		meta(name="keywords" content=keywords)
+	if description			
+		meta(name="description" content=description)
+	if robots
+		meta(name="robots" content=robots)
+
+	//- IE
+	
+	block bottomHead
