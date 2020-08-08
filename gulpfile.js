@@ -64,7 +64,11 @@ gulp.task('pug', function(){
 gulp.task('scripts', function() {
 	return gulp.src([
 		DIR_LIBS + 'jquery/dist/jquery.js',
-		DIR_LIBS + 'jquery-mask-plugin/dist/jquery.mask.js'
+		DIR_LIBS + 'jquery-mask-plugin/dist/jquery.mask.js',
+		DIR_LIBS + 'slick-carousel/slick/slick.js',
+		DIR_LIBS + 'fancybox/dist/jquery.fancybox.js',
+		DIR_LIBS + 'nouislider/distribute/nouislider.js',
+
 	])
 	.pipe(concat('libs.js'))
 	.pipe(gulp.dest(DIR_JS));
