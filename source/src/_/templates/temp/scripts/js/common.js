@@ -7,7 +7,8 @@ $(document).ready(function() {
 
 	hello.list.slick({
 		fade: true,
-		dots: true
+		dots: true,
+		adaptiveHeight: true
 	})
 
 
@@ -22,7 +23,33 @@ $(document).ready(function() {
 		// variableWidth: true,
 		// centerMode: true,
 		dots: true,
-		appendDots: gallery.dots
+		appendDots: gallery.dots,
+		responsive: [
+		{
+			breakpoint: 1410,
+			settings: 
+			{
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: 
+			{
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: 
+			{
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		}
+		]
 	})
 
 	var ranges = {
@@ -92,5 +119,29 @@ $(document).ready(function() {
 			var top = $(id).offset().top;
 			$('body,html').animate({scrollTop: top}, 1000);
 		}
+	});
+
+	var hum = $('.hum'),
+			humClass = '--toggle',
+			nav = $('.header__inner'),
+			navClass = '--toggle',
+			bg  = $('.bg-mobile'),
+			bgClass = '--toggle',
+			inner = $('html, body'),
+			innerClass = '--scroll-none'
+
+	function toggleNav() {
+		hum.toggleClass(humClass);
+		nav.toggleClass(navClass);
+		bg.toggleClass(bgClass);
+		inner.toggleClass(innerClass);
+	}
+
+	hum.on('click', function () {
+		toggleNav();
+	});
+
+	bg.on('click', function () {
+		toggleNav();
 	});
 });

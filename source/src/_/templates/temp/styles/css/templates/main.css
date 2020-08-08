@@ -114,6 +114,12 @@ i {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto; }
+  @media screen and (max-width: 1775px) {
+    .case {
+      width: 1370px; } }
+  @media screen and (max-width: 1410px) {
+    .case {
+      width: 1140px; } }
   @media screen and (max-width: 1199px) {
     .case {
       width: 950px; } }

@@ -64,9 +64,9 @@ append content
 	.catalog#catalog
 		.case
 			.catalog__wrap.row
-				.catalog__big-title #[img(src="upload/text-catalog.svg", alt="")]
+				.catalog__big-title.big-title #[img(src="upload/text-catalog.svg", alt="")]
 				.catalog__group
-					.catalog__title.title Ка #[br]та #[br]л#[b.o-1 о]г
+					.catalog__title.title Ка#[br]та#[br]л#[b.o-1 о]г
 
 				.catalog__list.row
 					.catalog__item
@@ -135,16 +135,17 @@ append content
 
 
 	.calc#calc
-		.calc__big-title #[img(src="upload/text-calc.svg", alt="")]
+		.calc__big-title.big-title #[img(src="upload/text-calc.svg", alt="")]
 		.case
 			.calc__wrap.row
 				.calc__imgs
-					.calc__img
-						img(src="upload/siling-1.jpg", alt="")
-					.calc__img
-						img(src="upload/siling-2.jpg", alt="")
-					.calc__img
-						img(src="upload/siling-3.jpg", alt="")
+					.calc__imgs-wrap
+						.calc__img
+							img(src="upload/siling-1.jpg", alt="")
+						.calc__img
+							img(src="upload/siling-2.jpg", alt="")
+						.calc__img
+							img(src="upload/siling-3.jpg", alt="")
 				.calc__content
 					.calc__title.title расчет #[br] ст#[b.o-2 о]имости
 					.calc__desc натяжного потолка по акции. Для точного расчёта необходим замер! Минимальный заказ 6 000 руб.
@@ -160,7 +161,7 @@ append content
 	.advantages#advantages
 		.case
 			.advantages__wrap.row
-				.advantages__big-title #[img(src="upload/text-advantages.svg", alt="")]
+				.advantages__big-title.big-title #[img(src="upload/text-advantages.svg", alt="")]
 				.advantages__content
 					.advantages__title.title Наши #[br]плю#[b.s с]ы
 					.advantages__text.text
@@ -205,7 +206,7 @@ append content
 
 
 	.gallery#gallery
-		.gallery__big-title #[img(src="upload/text-gallery.svg", alt="")]
+		.gallery__big-title.big-title #[img(src="upload/text-gallery.svg", alt="")]
 		.gallery__head
 			.case.row.i-mid
 				.gallery__title.title гале#[b.r р]ея
@@ -213,113 +214,131 @@ append content
 		.gallery__body
 			.gallery__list.nav-arrows
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-1.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый 
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-1.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый 
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-2.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-2.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-3.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-3.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-4.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-4.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-5.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-5.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-6.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-6.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-1.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый 
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-1.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый 
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-2.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-2.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-3.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-3.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-4.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-4.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-5.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-5.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-6.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-6.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-1.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый 
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-1.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый 
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-2.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-2.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-3.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-3.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-4.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-4.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-5.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-5.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 				.gallery__item
-					.gallery__img.img #[div(style="background-image: url('upload/gallery-6.jpg')")]
-					.gallery__content
-						.gallery__subtitle натяжной потолок
-						.gallery__name двухуровневый
-						.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					.gallery__inner
+						.gallery__img.img #[div(style="background-image: url('upload/gallery-6.jpg')")]
+						.gallery__content
+							.gallery__subtitle натяжной потолок
+							.gallery__name двухуровневый
+							.gallery__text.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
 	.contacts#contacts
 		.case
 			.contacts__wrap.row
